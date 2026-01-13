@@ -2,11 +2,11 @@ import pandas as pd
 import json
 
 # Load Excel sheet into a DataFrame
-excel_file = 'D:\\CPDB_UPLOAD\\FEB-2024\\GPD-757\\checklist-ap.xlsx'
+excel_file = 'D:checklist-ap.xlsx'
 df_excel = pd.read_excel(excel_file, sheet_name='Sheet1')
 
 # Load JSON file
-json_file = r"D:\CPDB_UPLOAD\FEB-2024\GPD-757\APAC_Product_Data_0208.json"
+json_file = r"D:Product_Data.json"
 with open(json_file, 'r', encoding='utf-8') as f:
     product_data = json.load(f)
     

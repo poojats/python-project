@@ -2,7 +2,7 @@ import json
 import openpyxl
 
 # Replace with the path to your JSON file
-json_file_path = r"C:\Users\Pooja.TS\Downloads\Publish_APAC_Batch3_Fixed_BrandName.json"
+json_file_path = r"C:example.json"
 
 # Read JSON data from file and clean invalid control characters
 with open(json_file_path, 'r', encoding='utf-8') as file:
@@ -92,7 +92,7 @@ for item_id, item_data in json_data.items():
     sheet.append(row_data)
 
 # Save Excel file
-excel_file_path = r'C:\Users\Pooja.TS\Downloads\Publish_APAC_Batch3_Fixed_BrandName.xlsx'
+excel_file_path = r'C:example.xlsx'
 workbook.save(excel_file_path)
 
 print(f"Successfully created and saved Excel file: {excel_file_path}")
